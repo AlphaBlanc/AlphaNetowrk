@@ -18,7 +18,7 @@ async def on_ready():
 @bot.event
 async def on_message(message):
         await bot.delete_message(message)
-        embed = discord.Embed(title="벨라",
+        embed = discord.Embed(title="알파네트워크",
                               description="",
                               color=0x00ff00)
         await bot.send_message(message.channel, embed=embed)
@@ -36,20 +36,20 @@ async def on_message(message):
         YES5 = "\"라고 말하였습니다."
         if message.content[-1] == "?":
             if message.content[2] == "나":
-                embed = discord.Embed(title="Erica:", description= YES + YES2+message.content[3:-1], color=0x383b38)
+                embed = discord.Embed(title="AlphaNetwork:", description= YES + YES2+message.content[3:-1], color=0x383b38)
                 await bot.send_message(message.channel, embed=embed)
             else:
-                embed = discord.Embed(title="Erica:", description= YES + message.content[2:-1], color=0x383b38)
+                embed = discord.Embed(title="AlphaNetwork:", description= YES + message.content[2:-1], color=0x383b38)
                 await bot.send_message(message.channel, embed=embed)
         else:
             if message.content[2]== "나":
-                embed = discord.Embed(title="Erica:", description= YES + YES2+message.content[3:-1], color=0x383b38)
+                embed = discord.Embed(title="AlphaNetwork:", description= YES + YES2+message.content[3:-1], color=0x383b38)
                 await bot.send_message(message.channel, embed=embed)
             else:
-                embed = discord.Embed(title="Erica:", description= YES+message.content[2:], color=0x383b38)
+                embed = discord.Embed(title="AlphaNetwork:", description= YES+message.content[2:], color=0x383b38)
                 await bot.send_message(message.channel, embed=embed)
     if message.content.startswith("tr "):
-         embed = discord.Embed(title="Erica:", description=YES3 + id + YES4 + message.content[3:] + YES5, color=0x383b38)
+         embed = discord.Embed(title="AlphaNetwork:", description=YES3 + id + YES4 + message.content[3:] + YES5, color=0x383b38)
          await bot.send_message(message.channel, embed=embed)
     if "검색" == message.content.split(" ")[0]:
         group = message.content.split(" ")[1]
@@ -58,7 +58,7 @@ async def on_message(message):
         img = bp.find_all('img')
         img2=img[2]
         img_src=img2.get('src')
-        embed = discord.Embed(title="Erica:", description= "https://www.google.com/search?hl=ko&biw=958&bih=959&tbm=isch&sa=1&ei=L5ZtXJ2aLpGSr7wPiKuC-A0&q="+group, color=0x383b38)
+        embed = discord.Embed(title="AlphaNetwork:", description= "https://www.google.com/search?hl=ko&biw=958&bih=959&tbm=isch&sa=1&ei=L5ZtXJ2aLpGSr7wPiKuC-A0&q="+group, color=0x383b38)
         embed.set_footer(icon_url="https://www.google.com/search?hl=ko&biw=958&bih=959&tbm=isch&sa=1&ei=L5ZtXJ2aLpGSr7wPiKuC-A0&q="+group)
         embed.set_image(url=img_src)
         await bot.send_message(message.channel, embed=embed)
