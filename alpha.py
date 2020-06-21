@@ -1,10 +1,6 @@
 import discord
-from discord.ext import commands
-import asyncio
-import os
 
-client = discord.Client()
-
+client = discord.Client() # use Client
 
 @client.event
 async def on_ready():
