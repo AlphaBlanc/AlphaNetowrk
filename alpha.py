@@ -8,11 +8,9 @@ client = discord.Client()
 
 @client.event
 async def on_ready():
-    print("로그인")
-    print(bot.user.name) 
-    print(bot.user.id)
-    print("------------------")
-    await bot.change_presence(game=discord.Game(name="서버주소: Alpha.minesv.kr", type=1))
+
+    await client.change_presence(status=discord.Status.online, activity=discord.Game("서버주소: Alpha.minesv.kr"))
+    print("로그인!")
     
 @client.event
 async def on_message(message): # do action when message sent
