@@ -13,6 +13,7 @@ async def on_ready():
     print(bot.user.id)
     print("------------------")
     await bot.change_presence(game=discord.Game(name="서버주소: Alpha.minesv.kr", type=1))
+    
 @client.event
 async def on_message(message): # do action when message sent
     if message.author.bot: # if chatter is bot
