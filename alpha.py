@@ -2,8 +2,6 @@ import discord
 
 client = discord.Client()
 
-bot = commands.Bot(command_prefix='T')
-
 
 @bot.event
 async def on_ready():
@@ -14,4 +12,4 @@ async def on_ready():
     await bot.change_presence(game=discord.Game(name="서버주소: Alpha.minesv.kr", type=1))
 @bot.event
 access_token = os.environ["BOT_TOKEN"]
-bot.run(access_token)
+client.run('NjUwMzMxOTUwNTg1ODcyMzg1.Xu7_3w.7sxswYc05b14KNl5E4Qe2ZbQNbU')
