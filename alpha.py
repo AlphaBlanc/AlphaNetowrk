@@ -1,7 +1,4 @@
 import discord
-from discord.ext import commands
-import asyncio
-import os
 
 client = discord.Client()
 
@@ -14,7 +11,7 @@ async def on_ready():
     print(bot.user.name) 
     print(bot.user.id)
     print("------------------")
-    await bot.change_presence(game=discord.Game(name="서버주소: BLAGE.kr", type=1))
+    await bot.change_presence(game=discord.Game(name="서버주소: Alpha.minesv.kr", type=1))
 @bot.event
 access_token = os.environ["BOT_TOKEN"]
 bot.run(access_token)
